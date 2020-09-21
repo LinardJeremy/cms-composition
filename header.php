@@ -9,9 +9,13 @@
 <body>
 <nav class="navbar-expand-lg navbar-light bg-light">
 <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-    <ul class="navbar-nav">
-<?php wp_nav_menu(['theme_location'=>'header','container' => false]) ?>
-    </ul>
+  
+<?php wp_nav_menu(['theme_location'=>'header',
+          'container' => false,
+          'menu_class' => 'navbar-nav mr-auto'
+
+        ]) ?>
+    <?= get_search_form() ?>
 </div>
 
   <!-- <a class="navbar-brand" href="#">Navbar</a>

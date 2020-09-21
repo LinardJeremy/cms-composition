@@ -12,5 +12,6 @@ Hello world : <?php  wp_title()?>
 <?php else: ?>
 <h1>Pas d'article</h1>
 <?php endif; ?>
+<?php montheme_pagination()?>
 
 <?php get_footer()?>
