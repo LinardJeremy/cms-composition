@@ -10,7 +10,7 @@ get_header();
 <div><?php the_content() ?> </div>
 <img class="image" src="<?php echo get_field('bandeau_image')['url'] ?>">
 <?php echo get_field('info'); ?>
-
+<?php var_dump(get_field('bouton')); ?>
 <?php endwhile ?>
 </ul>
 <?php else: ?>
