@@ -5,6 +5,8 @@ register_nav_menu('header',"tete du menu");
 function montheme_register_assets(){
     wp_register_style('bootstrap','https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css');
     wp_enqueue_style('bootstrap');
+    wp_register_style('myStyle','/wp-content/themes/cms-composition/style.css');
+    wp_enqueue_style('myStyle');
 };
 function montheme_support(){
     add_theme_support('title-tag');

@@ -8,6 +8,7 @@ get_header();
 <?php while(have_posts()): the_post(); ?>
 <li><a href="<?php the_permalink()?>"><?php the_title() ?></a></li>
 <div><?php the_content() ?> </div>
+<img class="image" src="<?php echo get_field('bandeau_image')['url'] ?>">
 <?php echo get_field('info'); ?>
 
 <?php endwhile ?>
